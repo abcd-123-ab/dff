@@ -39,7 +39,7 @@ export default function App() {
 
   const del = (i) => setb(b.filter((_, index) => index !== i));
 
-  const data = filter ? b.filter((x) => x.id.toLowerCase().includes(filter.toLowerCase())): b;
+  const data = filter ? b.filter((x) => x.id.toLowerCase()===filter.toLowerCase()): b;
 
   return (
     <div>
